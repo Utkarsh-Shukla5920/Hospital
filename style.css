@@ -38,7 +38,7 @@ nav{
 }
 .navbar ul{
     display: flex;
-    gap: 25px;
+    gap: 30px;
     align-items: center;
     
 }
@@ -71,7 +71,6 @@ nav{
 
 
 /*-----Header-------*/
-/*--------Home Section--------*/
 
 .home {
     min-height: 85vh;
@@ -126,6 +125,53 @@ nav{
 
 
 
+/*-----Services------*/
+.services {
+    padding: 50px 6%;
+    scroll-margin-top: 75px;
+}
+.stext1{
+    text-align: center;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    border: 5px solid #ff2727;
+    width: 100px;
+    margin-top: 10px;
+    height: 5px;
+    border-radius: 10px;
+}
+.service-section{
+   display: grid;
+   align-items: center;
+   gap: 30px;
+   grid-template-columns: repeat(3, 1fr);
+   margin-top: 40px;
+   align-items: stretch;
+}
+.service-cards{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 25px;
+    min-height: 200px;
+}
+.service-cards h1{
+    margin-bottom: 20px;
+}
+.service-cards p{
+    color: #777777;
+}
+.service-cards:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+
 /*----------Device Friendy------*/
 @media (max-width: 700px) {
 
@@ -156,5 +202,35 @@ nav{
 
     .navbar.show {
         display: block;
+    }
+    /* Home section for mobile */
+
+    .home {
+    flex-direction: column;
+    padding: 40px 6%;
+    gap: 30px;
+    min-height: auto;
+    }
+
+    .text2 {
+    width: 100%;
+    }
+
+    .text2 h1 {
+    font-size: 36px;
+    }
+
+    .text2 p {
+    font-size: 15px;
+    }
+
+    .homeimg {
+    width: 100%;
+    }
+
+    .homeimg img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
     }
 }
