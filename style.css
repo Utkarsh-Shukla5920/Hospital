@@ -250,6 +250,148 @@ nav{
 
 
 
+/*---------About-----------*/
+.about{
+    padding: 50px 6%;
+    scroll-margin-top: 75px;
+}
+.about1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about2{
+    border: 1px solid #777777;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.about2 h3{
+    color: #ff2727;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+.about2 p{
+    color: #777777;
+    font-size: 16px;
+}
+.about2 h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*-----Contact section-----*/
+.contact{
+    padding: 50px 6%;
+    scroll-margin-top: 75px;
+}
+.contact1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#abc{
+    text-align: center;
+    margin-top: 20px;
+}
+.contact2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid #555555;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.contact-info{
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 20px;
+}
+.contact-info h4{
+    color: #777777;
+    margin-top: 10px;
+}
+.contact-info h1{
+    color: #333333;
+}
+#def{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* Contact Form */
+
+.contact3 {
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.contact3 form {
+    background-color: #F2F2F2;
+    padding: 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+}
+
+.inout-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inout-box label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.inout-box input{
+    padding: 13px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+.inout-box textarea {
+    padding: 13px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+.inout-box input:focus{
+    border-color: crimson;
+}
+.inout-box textarea:focus {
+    border-color: crimson;
+}
+
+.inout-box textarea {
+    resize: vertical;
+}
+
+.contact3 button {
+    background-color: #111111;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact3 button:hover {
+    background-color: #555555;
+}
+
+
+
+
+
+
 /*----------Device Friendy------*/
 @media (max-width: 700px) {
 
@@ -364,5 +506,20 @@ nav{
 
     .item p {
         font-size: 13px;
+    }
+    .contact2 {
+    grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+    padding: 15px;
+    }
+
+    .contact3 form {
+    padding: 20px;
+    }
+
+    .contact3 button {
+    width: 100%;
     }
 }
