@@ -327,4 +327,42 @@ nav{
     min-height: 150px;
     padding: 20px;
     }
+     #products {
+        padding: 40px 5%;
+    }
+
+    .product2 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .procat {
+        padding: 12px 5px;
+        font-size: 15px;
+    }
+
+    .procat i {
+        font-size: 25px;
+    }
+
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .item img {
+        height: 120px;
+    }
+
+    .item h2 {
+        font-size: 15px;
+    }
+
+    .item p {
+        font-size: 13px;
+    }
 }
